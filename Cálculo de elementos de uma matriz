@@ -1,0 +1,46 @@
+package Atividades;
+
+public class Ex1 {
+	public static void main(String[] args) {
+		//Exercício 1 - Desenvolva um programa que percorra uma única vez uma matriz de inteiros.
+		//- Identifique o maior e o menor elemento.
+		//- Calcule a soma de todos os elementos.
+		//- Calcule o valor médio da matriz.
+	    
+		//VARIAVEIS
+		//m = Matriz
+		//i = Comparativo/Contador de Linha; j = Comparativo/Contador de Coluna;
+		//mnum = Maior Número; menum = Menor Número
+		int m[][] = {
+						{1,2,3,4}, 
+						{5,6,7,8}, 
+						{9,10,11,12}, 
+						{13,14,15,16}
+					};
+		
+	    int i,j,soma = 0, media=0, mnum = 0, menum = 9999, contquant = 0;
+	    
+	    for(i=0; i < m.length; i++){
+	    	for(j=0; j < m[i].length; j++){
+	    		if (m[i][j]>mnum){
+    				mnum = m[i][j];
+    				}
+    			if (m[i][j]<menum){
+    			    menum = m[i][j];
+    			    }
+    			soma += m[i][j];
+    			contquant++;
+	    	}
+	    	
+	    }
+	    media = soma/contquant;
+
+	    
+	        System.out.println("O maior número da matriz é: "+mnum);
+	        System.out.println("O menor número da matriz é: "+menum);
+	        System.out.println("A soma de todos os elementos da matriz é: "+soma);
+	        System.out.println("A média dos elementos da matriz é: "+media);
+
+	}
+
+}
