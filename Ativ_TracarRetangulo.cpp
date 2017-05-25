@@ -1,5 +1,11 @@
-//Feito por:
-//Jonathan Freitas Ferreira
+/*
+
+By:
+Jonathan Freitas Ferreira
+
+Program in C++ that draws a rectangle using the fuction "TracarLinha" four times.
+
+*/
 
 #include "header.h"
 
@@ -22,7 +28,7 @@ void TracarRetangulo(){
 	TracarLinha(img, x1, y2, x1, y1);
 
 	//Mostrando resultados
-	imshow("Ret‚ngulo M·gico", img);
+	imshow("Ret√¢ngulo M√°gico", img);
 	waitKey(0);
 
 }
