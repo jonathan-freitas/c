@@ -1,5 +1,11 @@
-//Feito por:
-//Jonathan Freitas
+/*
+
+By:
+Jonathan Freitas
+
+Program in C++ that reads an image, and do a Histogram of it.
+
+*/
 
 #include "header.h"
 
@@ -8,7 +14,7 @@ void Histograma(){
 	//Recebendo imagem
 	Mat img = imread("twd.jpg", 0);
 
-	//Vari·veis LÛgicas
+	//Vari√°veis L√≥gicas
 	int Hist[256];
 
 	//Percorrendo o Array
