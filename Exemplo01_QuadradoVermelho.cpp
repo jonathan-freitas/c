@@ -1,3 +1,12 @@
+/*
+
+By: 
+Jonathan Freitas Ferreira
+
+Program in C++ that creates a red box.
+
+*/
+
 #include "header.h"
 
 void Exemplo_QuadradoVermelho(){
