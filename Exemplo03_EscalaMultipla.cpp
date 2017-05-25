@@ -1,9 +1,18 @@
+/*
+
+By: 
+Jonathan Freitas Ferreira
+
+Program in C++ that separates each channel of an image (Red, Blue and Green), plus it also will create a gray scale of that image.
+
+*/
+
 #include "header.h"
 
 void EscalaMultipla(){
 	Mat img = imread("fasam.jpg");
 
-	Mat gray = Mat(img.rows, img.cols, CV_8U, 1); //8 bits que comporta até 256 de cor
+	Mat gray = Mat(img.rows, img.cols, CV_8U, 1); //8 bits que comporta atÃ© 256 de cor
 	Mat red = Mat(img.rows, img.cols, CV_8U, 1);
 	Mat green = Mat(img.rows, img.cols, CV_8U, 1);
 	Mat blue = Mat(img.rows, img.cols, CV_8U, 1);
