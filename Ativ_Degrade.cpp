@@ -1,3 +1,5 @@
+//By: Jonathan Freitas
+
 #include "header.h"
 
 void Degrade(){
