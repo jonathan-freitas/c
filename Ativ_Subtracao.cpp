@@ -1,5 +1,11 @@
-//Feito por:
-//Jonathan Freitas
+/*
+
+By:
+Jonathan Freitas
+
+Program in C++ that receives two images, and subtracts them.
+
+*/
 
 #include "header.h"
 
@@ -10,17 +16,17 @@ void Subtracao(){
 	Mat img2 = imread("imagem2.jpg", 0);
 	Mat imgSub = Mat(img.rows, img.cols, CV_8U, 1);
 
-	//Variavéis Lógicas
+	//VariavÃ©is LÃ³gicas
 	int posicao = 0;
 
 	//Colunas e Linhas
 	for(int i = 0; i < img.cols; i++){
 		for(int j = 0; j < img.rows; j++){
 
-			//Recebendo os valores subtraídos
+			//Recebendo os valores subtraÃ­dos
 			posicao = img.data[j * img.cols + i] - img2.data[j * img.cols + i];
 
-			//Caso o resultado do pixel seja menor que 0, ele será "positivado" aqui
+			//Caso o resultado do pixel seja menor que 0, ele serÃ¡ "positivado" aqui
 			if(posicao < 0){
 				posicao = posicao * -1;
 			}
@@ -33,6 +39,6 @@ void Subtracao(){
 	//Mostrando resultados
 	imshow("Imagem 1", img);
 	imshow("Imagem 2", img2);
-	imshow("Imagem Subtraída", imgSub);
+	imshow("Imagem SubtraÃ­da", imgSub);
 	waitKey();
 }
