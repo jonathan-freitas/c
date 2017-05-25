@@ -1,5 +1,8 @@
-//Feito por:
-//Jonathan Freitas Ferreira
+/* By: Jonathan Freitas
+
+Little code to blur images.
+
+*/
 
 #include "header.h"
 
@@ -29,7 +32,7 @@ void Embacamento(){
     channelsAlt = alt->nChannels;				//img.channels da imagem clonada
     uchar* altData = (uchar *)alt->imageData;	//img.data da imagem clonada
 
-	//Variaveis lógicas
+	//Variaveis lÃ³gicas
     int total = 0;
     int i, j, mi, mj, x, y;
 
@@ -50,7 +53,7 @@ void Embacamento(){
                     x = i + mi;
                     y = j + mj;
 
-					//Não fugindo da imagem
+					//NÃ£o fugindo da imagem
                     if(x >= 0 && x < height && y >= 0 && y < width){
                         total += data[x * step + y];
                     }
