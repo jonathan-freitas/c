@@ -1,3 +1,12 @@
+/*
+
+By:
+Jonathan Freitas Ferreira
+
+Program in C++ that makes the Threshold of an image.
+
+*/
+
 #include "header.h"
 
 void Threshould(){
