@@ -1,3 +1,12 @@
+/*
+
+By:
+Jonathan Freitas Ferreira
+
+Program in C++ that inverts the color of an image.
+
+*/
+
 #include "header.h"
 
 void InverterCor(){
