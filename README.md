@@ -1,2 +1,0 @@
-# Faculdade
-Atividades da Faculdade
