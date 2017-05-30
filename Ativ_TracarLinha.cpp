@@ -1,5 +1,10 @@
-//Feito por:
-//Jonathan Freitas Ferreira
+/*
+
+By:
+Jonathan Freitas Ferreira
+Program in C++ that draws a Line in a received image
+
+*/
 
 #include "header.h"
 
@@ -63,7 +68,7 @@ Mat TracarLinha(Mat img, int x1, int y1, int x2, int y2){
 
 	/*
 	//Mostrando resultados
-	imshow("Linha Mágico", img);
+	imshow("Linha MÃ¡gico", img);
 	waitKey(0);
 	*/
 }
