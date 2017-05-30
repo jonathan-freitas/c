@@ -1,5 +1,11 @@
-//Feito por:
-//Jonathan Freitas Ferreira
+/*
+
+By:
+Jonathan Freitas Ferreira
+
+Program in C++ that draws a Line in a received image
+
+*/
 
 #include "header.h"
 
@@ -9,9 +15,9 @@ void TracarCirculo(){
 	Mat img = Mat(500, 500, CV_8UC1, Scalar(255));
 
 	//Coordenadas X e Y
-	//diferente da linha ou do retangulo que s„o mais "flexiveis" na questao dos pontos, 
+	//diferente da linha ou do retangulo que s√£o mais "flexiveis" na questao dos pontos, 
 	//atente-se ao tamanho do raio antes de inserir as coordenadas, pois se o circulo ultrapassar as bordas
-	//o programa acusar· erro.
+	//o programa acusar√° erro.
 	int x = -250; 
 	int y = -250; 
 
@@ -50,7 +56,7 @@ void TracarCirculo(){
 	}
 
 	//Mostrando resultados
-	imshow("Circulo M·gico", img);
+	imshow("Circulo M√°gico", img);
 	waitKey(0);
 
 }
