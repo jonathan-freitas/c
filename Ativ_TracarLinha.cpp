@@ -2,6 +2,7 @@
 
 By:
 Jonathan Freitas Ferreira
+
 Program in C++ that draws a Line in a received image
 
 */
